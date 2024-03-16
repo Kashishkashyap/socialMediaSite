@@ -26,20 +26,41 @@
             is the port number specified in your server configuration.</li>
     </ol>
 
-    <h2 id="routes">Routes</h2>
+    <h2 id="routes">Backend Routes</h2>
     <p>List of routes and their descriptions go here.</p>
     <ul>
         <li><code>POST v1/api/users/auth/signup Description: Register a new user</li>
         <li><code>POST v1/api/users/auth/signin Description: Login user</li>
         <li><code>GET /v1/api/users/:id Description: Get user profile by ID</li>
-        <li><code>PUT /v1/api/users/:id Description: Update user profile by ID</li>
+        <li><code>PUT /v1/api/users/edit/:id Description: Update user profile by ID</li>
         <li><code>DELETE /v1/api/users/:id Description: Delete user profile by ID</li>
-        <li><code>POST /v1/api/posts/ Description: Create a new post</li>
+        <li><code>POST /v1/api/posts/create Description: Create a new post</li>
         <li><code>GET /v1/api/posts/:id Description: Get post by ID</li>
         <li><code>PUT /v1/api/posts/:id Description: Update post by ID</li>
         <li><code>DELETE /v1/api/posts/:id Description: Delete post by ID</li>
     </ul>
+    <h2>Frontend Endpoints</h2>
+        <h2>Authentication Routes</h2>
+  <ul>
+    <li><code>/login</code>: Allows users to log in to their accounts.</li>
+    <li><code>/register</code>: Allows users to create new accounts.</li>
+  </ul>
 
+  <h2>User Profile Routes</h2>
+  <ul>
+    <li><code>/view</code>: Displays the user profile information.</li>
+    <li><code>/view/update</code>: Allows users to update their profile information.</li>
+    <li><code>/view/delete</code>: Allows users to delete their profile.</li>
+  </ul>
+
+  <h2>Post Management Routes</h2>
+  <ul>
+    <li><code>/post/create</code>: Allows users to create new posts.</li>
+    <li><code>/post/view/:id</code>: Displays detailed information about a specific post.</li>
+    <li><code>/post/update/:id</code>: Allows users to update their posts.</li>
+    <li><code>/post/delete/:id</code>: Allows users to delete their posts.</li>
+  </ul>
+    
     <h2 id="middleware">Middleware</h2>
     <p>List of middleware and their descriptions go here.</p>
     <ul>
