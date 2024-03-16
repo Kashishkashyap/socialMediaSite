@@ -6,8 +6,14 @@ const userAuth = require('./routes/userAuth');
 const userCrud = require('./routes/userCrud');
 const posts = require('./routes/posts');
 const follow = require('./routes/follow');
-const feed = require('./routes/feed')
-
+const feed = require('./routes/feed');
+const cors = require('cors');
+app.use(cors(
+    {
+        method: ["GET", "POST", "PUT"],
+        credentials: true
+    }
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));

@@ -27,9 +27,9 @@ router.get('/:id', async (req, res) => {
 // @route   PUT /v1/api/users/:id
 // @desc    Update user profile by ID
 // @access  Private
-router.put('/:id', fetchUser, [
+router.put('/edit/:id', fetchUser, [
     body('bio', 'Please enter a valid bio').optional().isString(),
-    body('profilePicture', 'Please enter a valid profile picture URL').optional().isURL()
+    body('profilePicture', 'Please enter a valid profile picture URL').optional()
 ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
