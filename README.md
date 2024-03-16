@@ -13,7 +13,7 @@
 
     <h2 id="installation">Installation</h2>
     <ol>
-        <li>Clone the repository: https://github.com/Kashishkashyap/socialMediaBackend.git</li>
+        <li>Clone the repository: [https://github.com/Kashishkashyap/socialMediaBackend.git](https://github.com/Kashishkashyap/socialMediaSite.git)</li>
         <li>Install dependencies:</li>
         <code>npm install</code>
     </ol>
