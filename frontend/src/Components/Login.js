@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/v1/api/users/auth/signin', {
+            const response = await fetch('https://social-media-site-gules.vercel.app/v1/api/users/auth/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

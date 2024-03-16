@@ -8,7 +8,7 @@ const ViewPost = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/v1/api/posts/${id}`);
+                const response = await fetch(`https://social-media-site-gules.vercel.app/v1/api/posts/${id}`);
                 if (!response.ok) {
                     throw new Error('Post not found');
                 }

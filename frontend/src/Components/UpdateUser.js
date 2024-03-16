@@ -14,7 +14,7 @@ const UpdateUser = () => {
         e.preventDefault();
         try {
             const id = user._id;
-            const response = await fetch(`http://localhost:5000/v1/api/users/edit/${id}`, {
+            const response = await fetch(`https://social-media-site-gules.vercel.app/v1/api/users/edit/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

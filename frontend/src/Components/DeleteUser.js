@@ -8,7 +8,7 @@ const DeleteUser = () => {
     const handleDelete = async () => {
         try {
             const id = user._id;
-            const response = await fetch(`http://localhost:5000/v1/api/users/${id}`, {
+            const response = await fetch(`https://social-media-site-gules.vercel.app/v1/api/users/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "token": localStorage.getItem('token')

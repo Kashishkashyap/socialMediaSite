@@ -9,7 +9,7 @@ const UserProfile = () => {
         const fetchUserProfile = async () => {
             try {
                 const id = localStorage.getItem("userId");
-                const response = await fetch(`http://localhost:5000/v1/api/users/${id}`, {
+                const response = await fetch(`https://social-media-site-gules.vercel.app/v1/api/users/${id}`, {
                     headers: {
                         "Content-Type": "application/json",
                         "token": localStorage.getItem('token')
